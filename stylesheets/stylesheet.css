@@ -106,7 +106,7 @@ p {
 }
 
 footer p {
-  color: #f2f2f2;
+  color: #f0f0f0;
 }
 
 a {
@@ -246,7 +246,7 @@ td {
  }
 
 form {
-  background: #f2f2f2;
+  background: #f0f0f0;
   padding: 20px;
 }
 
@@ -316,7 +316,7 @@ Full-Width Styles
 
 #contact {
   color: #ccc;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 #downloads {
@@ -359,7 +359,7 @@ Full-Width Styles
 }
 
 #main_content_wrap {
-  background: #f2f2f2;
+  background: #f0f0f0;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
 }
