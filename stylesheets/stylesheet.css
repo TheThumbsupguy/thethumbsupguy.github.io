@@ -89,15 +89,16 @@ h3 {
 }
 
 h4 {
-  font-size: 21px;
+  font-size: 18px;
+  color:#007EDF;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 p {
@@ -147,15 +148,7 @@ img {
   position: relative;
   margin: 0 auto;
   max-width: 739px;
-  padding: 5px;
   margin: 10px 0 10px 0;
-  border: 1px solid #ebebeb;
-
-  box-shadow: 0 0 5px #ebebeb;
-  -webkit-box-shadow: 0 0 5px #ebebeb;
-  -moz-box-shadow: 0 0 5px #ebebeb;
-  -o-box-shadow: 0 0 5px #ebebeb;
-  -ms-box-shadow: 0 0 5px #ebebeb;
 }
 
 pre, code {
@@ -321,6 +314,11 @@ Full-Width Styles
   text-shadow: #111 0px 0px 10px;
 }
 
+#contact {
+  color: #ccc;
+  font-size: 12px;
+}
+
 #downloads {
   position: absolute;
   width: 210px;
@@ -374,8 +372,28 @@ Full-Width Styles
   background: #212121;
 }
 
+.line {
+  border-bottom:1px #777 solid;
+  padding-bottom: 28px;
+  margin-bottom: 40px;
+}
 
+.work {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
 
+.work h4, .work p {
+  margin-left: 18px;
+  margin-right: 18px;
+}
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
