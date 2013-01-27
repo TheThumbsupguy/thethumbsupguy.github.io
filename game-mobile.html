@@ -1,31 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Biolab Disaster</title>
+	<title>Impact Game</title>
 	<link rel="Shortcut Icon" href="/favicon.ico" />
 	<style type="text/css">
 		html,body {
 			background-color: #000;
-			color: #fff;
-			font-family: helvetica, arial, sans-serif;
 			margin: 0;
 			padding: 0;
-			font-size: 12pt;
 			min-height: 416px;
 			position: relative;
 		}
 		
 		#canvas {
-			image-rendering: optimizeSpeed;
-			-webkit-interpolation-mode: nearest-neighbor;
-			
-		}
-		
-		@media screen and (-webkit-min-device-pixel-ratio:2){
-            #canvas {
-				width: 480px;
-				height: 320px;
-			}
+			width: 320px;
+			height: 320px;
 		}
 		
 		.button {
@@ -41,7 +30,6 @@
 			-webkit-tap-highlight-color: rgba(0,0,0,0);
 			-webkit-text-size-adjust: none;
 		}
-		#buttonFPS { position: absolute; top: 0; left: 0; width: 32px; height: 32px; }
 		#buttonLeft { left: 0; background-position: 0, 0; }
 		#buttonRight { left: 80px; background-position: -80px, 0; }
 		#buttonShoot { right: 80px; background-position: -160px, 0; }
