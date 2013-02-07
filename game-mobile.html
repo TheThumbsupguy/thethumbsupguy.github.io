@@ -17,6 +17,7 @@
 		
 		#canvas {
 			image-rendering: optimizeSpeed;
+			position:relative; 
 			-webkit-interpolation-mode: nearest-neighbor;
 			-webkit-touch-callout: none;
 			-webkit-user-select: none;
@@ -46,7 +47,7 @@
 		}
 
 		#buttonFPS { position: absolute; top: 0; left: 0; width: 32px; height: 32px; }
-		#buttonJump { right: 0px; background-position: -240px, 0; }
+		#buttonJump { right: 0px; background-position: -240px, 0; z-index: 999; }
 		
 		#game {
 			text-align: center;
@@ -61,8 +62,10 @@
 </head>
 <body onload="window.scrollTo(0,1);">
 	<div id="game">
-		<canvas id="canvas"></canvas>
-		<div class="button" id="buttonJump"></div>
+		<canvas id="canvas">
+			<div class="button" id="buttonJump"></div>
+		</canvas>
+		
 	</div>
 	
 	<script type="text/javascript">
