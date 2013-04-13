@@ -57,16 +57,9 @@
 		}
 	</style>
 	<link rel="apple-touch-icon" href="media/touch-icon.png"/>
-	
-	<?php $isiPad = (bool) strpos($_SERVER['HTTP_USER_AGENT'],'iPad');
-		if ( $isiPad ) { ?>
-		<?php // This is an iPad! ?>
-		    <meta name="viewport" content="width=device-width">
-		<?php    } else { ?>
-		<?php // Not an iPad ?>
-		    <meta name="viewport" content="width=100">
-	<?php } ?>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	
 	<script type="text/javascript" src="javascripts/game.min.js"></script>
