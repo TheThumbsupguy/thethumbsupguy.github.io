@@ -326,6 +326,10 @@ Full-Width Styles
   right:10px;
 }
 
+.bottom-padding {
+  padding-bottom: 15px;
+}
+
 #downloads {
   position: absolute;
   width: 210px;
