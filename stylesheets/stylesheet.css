@@ -320,6 +320,12 @@ Full-Width Styles
   font-size: 14px;
 }
 
+#resume {
+  position: absolute;
+  top:20px;
+  right:10px;
+}
+
 #downloads {
   position: absolute;
   width: 210px;
