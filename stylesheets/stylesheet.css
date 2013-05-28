@@ -314,7 +314,8 @@ Full-Width Styles
   text-shadow: #111 0px 0px 10px;
 }
 
-#contact {
+#contact,
+#resume {
   color: #ccc;
   font-size: 14px;
 }
