@@ -383,6 +383,17 @@ Full-Width Styles
   background: #212121;
 }
 
+.what-i-make {
+  float: left;
+  padding-right: 130px;
+}
+.what-i-use {
+  float: left;
+  max-width: 270px;
+}
+#about-me {
+  clear:both;
+}
 .line {
   border-bottom:1px #777 solid;
   padding-bottom: 28px;
