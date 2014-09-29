@@ -315,7 +315,8 @@ Full-Width Styles
 }
 
 #contact,
-#resume {
+#resume,
+#linkedin {
   color: #ccc;
   font-size: 14px;
 }
@@ -386,11 +387,11 @@ Full-Width Styles
   color: #999;
 }
 
-.what-i-make {
+.projects {
   float: left;
-  padding-right: 130px;
+  padding-right: 120px;
 }
-.what-i-use {
+.tools {
   float: left;
   max-width: 270px;
 }
@@ -420,7 +421,25 @@ Full-Width Styles
   margin-right: 18px;
 }
 
-#sub-title {
+.work h4 {
+  margin-top: 2px;
+}
+
+.work p {
+  margin-top: 0;
+}
+
+.work .img-link {
+  display: block;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.work .img-link > img {
+  box-shadow: 0 3px 8px rgba(0,0,0,0.7);
+}
+
+.sub-title {
   font-weight: bold;
 }
 
