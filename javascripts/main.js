@@ -1,7 +1,5 @@
 $(function() {
 	$('a[href*=#]:not([href=#])').click(scrollToAnchor);
-
-	if(window.location.hash) $('a[href*=#' + window.location.hash + ']:not([href=#])').click();
 });
 
 function scrollToAnchor() { 
