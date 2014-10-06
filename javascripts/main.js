@@ -1,5 +1,7 @@
 $(function() {
 	$('a[href*=#]:not([href=#])').click(scrollToAnchor);
+
+	if(window.location.hash) $('a[href*=#' + window.location.hash + ']:not([href=#])').click();
 });
 
 function scrollToAnchor() { 
@@ -10,7 +12,7 @@ function scrollToAnchor() {
         	$('html,body').animate({
 	          	scrollTop: target.offset().top
 	        }, 1000);
-        	return false;
+        	//return false;
         }
 	}
 }
