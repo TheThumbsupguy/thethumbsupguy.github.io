@@ -297,6 +297,12 @@ Full-Width Styles
   padding: 50px 10px 30px 10px;
 }
 
+#header_wrap .inner img {
+  max-height: 180px;
+  height: auto !important;
+  width: auto !important;
+}
+
 #project_title {
   margin: 0;
   color: #fff;
@@ -377,7 +383,6 @@ Full-Width Styles
 
 #main_content {
   padding-top: 40px;
-  line-height: 1.7;
 }
 
 #footer_wrap {
@@ -387,16 +392,14 @@ Full-Width Styles
   color: #999;
 }
 
-.projects {
-  float: left;
-  padding-right: 100px;
+.profile_pic {
+  display: block;
+  width: 270px;
+  margin: 10px auto 20px;
 }
-.tools {
-  float: left;
-  max-width: 270px;
-}
-#about-me {
-  clear:both;
+
+.clear {
+  clear: both;
 }
 .line {
   border-bottom:1px #007edf solid;
@@ -404,7 +407,7 @@ Full-Width Styles
   margin-bottom: 40px;
 }
 
-.work {
+.box-rounded {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -416,26 +419,37 @@ Full-Width Styles
   padding-top: 10px;
 }
 
-.work h4, .work p {
+.box-rounded .column {
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.box-rounded .column p {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.box-rounded h4, .box-rounded p {
   margin-left: 18px;
   margin-right: 18px;
 }
 
-.work h4 {
+.box-rounded h4 {
   margin-top: 2px;
 }
 
-.work p {
+.box-rounded p {
   margin-top: 0;
 }
 
-.work .img-link {
+.box-rounded .img-link {
   display: block;
   padding: 0 20px;
   box-sizing: border-box;
 }
 
-.work .img-link > img {
+.box-rounded .img-link > img,
+.box-rounded .box-shadow img
+{
   box-shadow: 0 3px 8px rgba(0,0,0,0.7);
 }
 
@@ -447,10 +461,10 @@ Full-Width Styles
 Small Device Styles
 *******************************************************************************/
 
-@media screen and (max-width: 480px) {
-  body {
-    font-size:14px;
-  }
+@media screen and (max-width: 640px) {
+  /*body {
+   font-size:14px;
+  }*/
 
   #downloads {
     display: none;
@@ -458,11 +472,11 @@ Small Device Styles
 
   .inner {
     min-width: 320px;
-    max-width: 480px;
+    max-width: 640px;
   }
 
   #project_title {
-  font-size: 32px;
+    font-size: 32px;
   }
 
   h1 {
