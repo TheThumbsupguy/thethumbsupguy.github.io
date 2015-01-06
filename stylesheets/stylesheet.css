@@ -317,6 +317,7 @@ Full-Width Styles
   font-weight: 300;
   background: none;
   text-shadow: #111 0px 0px 10px;
+  margin: 0;
 }
 
 #contact,
@@ -330,6 +331,10 @@ Full-Width Styles
   position: absolute;
   top:20px;
   right:20px;
+}
+
+#resume a {
+  font-size: 20px;
 }
 
 .bottom-padding {
@@ -395,7 +400,7 @@ Full-Width Styles
 .profile_pic {
   display: block;
   width: 270px;
-  margin: 10px auto 20px;
+  margin: 10px 0 35px;
 }
 
 .clear {
