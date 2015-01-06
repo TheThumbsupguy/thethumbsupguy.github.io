@@ -294,7 +294,7 @@ Full-Width Styles
 }
 
 #header_wrap .inner {
-  padding: 50px 10px 30px 10px;
+  padding: 30px;
 }
 
 #header_wrap .inner img {
@@ -318,6 +318,7 @@ Full-Width Styles
   background: none;
   text-shadow: #111 0px 0px 10px;
   margin: 0;
+  padding: 0;
 }
 
 #contact,
@@ -328,13 +329,9 @@ Full-Width Styles
 }
 
 #resume {
-  position: absolute;
+  /* position: absolute;
   top:20px;
-  right:20px;
-}
-
-#resume a {
-  font-size: 20px;
+  right:20px; */
 }
 
 .bottom-padding {
