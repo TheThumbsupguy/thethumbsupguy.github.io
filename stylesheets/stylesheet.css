@@ -84,7 +84,7 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 h4 {
@@ -471,7 +471,6 @@ Small Device Styles
   }
 
   .inner {
-    min-width: 320px;
     max-width: 640px;
   }
 
@@ -488,11 +487,11 @@ Small Device Styles
   }
 
   h3 {
-    font-size: 21px;
+    font-size: 24px;
   }
 
   h4 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   h5 {
@@ -504,7 +503,6 @@ Small Device Styles
   }
 
   code, pre {
-    min-width: 320px;
     max-width: 480px;
     font-size: 11px;
   }
