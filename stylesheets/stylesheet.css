@@ -411,7 +411,7 @@ Full-Width Styles
 .profile_pic {
   display: block;
   width: 270px;
-  margin: 15px 0;
+  margin: 15px auto;
 }
 
 .projects ul {
@@ -576,9 +576,6 @@ Small Device Styles
 }
 
 @media all and (max-width: 480px) {
-  .profile_pic {
-    margin: 15px auto;
-  }
   .column-half {
     width: auto;
     float: none;
