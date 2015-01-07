@@ -159,11 +159,6 @@ pre, code {
   font-size: 14px;
 
   border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-
-
-
 }
 
 pre {
@@ -409,7 +404,7 @@ Full-Width Styles
 .profile_pic {
   display: block;
   width: 270px;
-  margin: 10px 0 35px;
+  margin: 15px 0;
 }
 
 .clear {
@@ -424,13 +419,8 @@ Full-Width Styles
 .box-rounded {
   background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -o-border-radius: 10px;
-  -ms-border-radius: 10px;
+  border-radius: 2px;
   margin-bottom: 15px;
-  padding-top: 5px;
 }
 
 .box-rounded .column {
@@ -441,14 +431,21 @@ Full-Width Styles
   margin-left: 0;
   margin-right: 0;
 }
+.box-rounded .column-half {
+  width: 50%;
+  float: left;
+}
+.box-rounded .column-full {
+  clear: both;
+}
 
 .box-rounded h4, .box-rounded p {
-  margin-left: 18px;
-  margin-right: 18px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .box-rounded h4 {
-  margin-top: 2px;
+  margin: 15px;
 }
 
 .box-rounded p {
@@ -457,7 +454,7 @@ Full-Width Styles
 
 .box-rounded .img-link {
   display: block;
-  padding: 0 20px;
+  padding: 0 15px;
   box-sizing: border-box;
 }
 
@@ -475,7 +472,7 @@ Full-Width Styles
 Small Device Styles
 *******************************************************************************/
 
-@media screen and (max-width: 640px) {
+@media all and (max-width: 640px) {
   /*body {
    font-size:14px;
   }*/
@@ -492,6 +489,9 @@ Small Device Styles
     border-radius: 0;
     border-left: none;
     border-right: none;
+  }
+  .box-rounded .column-half {
+    
   }
 
   #main_content.inner {
@@ -535,4 +535,14 @@ Small Device Styles
     font-size: 11px;
   }
 
+}
+
+@media all and (max-width: 480px) {
+  .profile_pic {
+    margin: 15px auto;
+  }
+  .box-rounded .column-half {
+    width: auto;
+    float: none;
+  }
 }
