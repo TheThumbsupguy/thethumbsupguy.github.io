@@ -291,7 +291,7 @@ Full-Width Styles
 #header_wrap .inner,
 #footer_wrap .inner
 {
-  padding: 15px;
+  padding: 15px 0;
   box-sizing: border-box;
 }
 
@@ -299,6 +299,13 @@ Full-Width Styles
   max-height: 180px;
   height: auto !important;
   width: auto !important;
+}
+
+#header_wrap .inner h3 {
+  line-height: 1.4;
+}
+#header_wrap .inner a:hover {
+  text-decoration: underline;
 }
 
 #project_title {
@@ -311,7 +318,7 @@ Full-Width Styles
 
 #project_tagline {
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
   background: none;
   text-shadow: #111 0px 0px 10px;
@@ -407,6 +414,32 @@ Full-Width Styles
   margin: 15px 0;
 }
 
+.projects ul {
+  display: block;
+  margin-top: 15px;
+
+}
+.projects ul li {
+  list-style: none;
+  padding: 0;
+}
+.projects ul li a {
+  display: block;
+  color: white;
+  background-color: #212121;
+  padding: 10px 15px;
+  text-align: center;
+  border-bottom: 1px solid #575757;
+}
+.projects ul li:last-child a {
+  border-bottom: none;
+}
+.projects ul li a:hover {
+  opacity: 0.8;
+  text-shadow: none !important;
+  color: white !important;
+}
+
 .clear {
   clear: both;
 }
@@ -423,23 +456,9 @@ Full-Width Styles
   margin-bottom: 15px;
 }
 
-.box-rounded .column {
-  padding: 0 15px;
-  box-sizing: border-box;
-}
-.box-rounded .column p {
-  margin-left: 0;
-  margin-right: 0;
-}
-.box-rounded .column-half {
-  width: 50%;
-  float: left;
-}
-.box-rounded .column-full {
-  clear: both;
-}
-
-.box-rounded h4, .box-rounded p {
+.box-rounded h4,
+.box-rounded p
+{
   margin-left: 15px;
   margin-right: 15px;
 }
@@ -459,9 +478,30 @@ Full-Width Styles
 }
 
 .box-rounded .img-link > img,
-.box-rounded .box-shadow img
+.box-rounded .box-shadow img,
+ul.box-shadow
 {
-  box-shadow: 0 3px 8px rgba(0,0,0,0.7);
+  box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+}
+
+.about-me h3 {
+  margin-top: 0;
+}
+
+.column {
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.column p {
+  margin-left: 0;
+  margin-right: 0;
+}
+.column-half {
+  width: 50%;
+  float: left;
+}
+.column-full {
+  clear: both;
 }
 
 .sub-title {
@@ -490,12 +530,10 @@ Small Device Styles
     border-left: none;
     border-right: none;
   }
-  .box-rounded .column-half {
-    
-  }
 
   #main_content.inner {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   #main_content .box-rounded:last-child {
@@ -541,7 +579,7 @@ Small Device Styles
   .profile_pic {
     margin: 15px auto;
   }
-  .box-rounded .column-half {
+  .column-half {
     width: auto;
     float: none;
   }
