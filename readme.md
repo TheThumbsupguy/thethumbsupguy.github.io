@@ -1,3 +1,3 @@
 # Jacob Ross - Web Portfolio
 
-Can be viewed at jacobdross.com
+Can be viewed at http://jacobdross.com
