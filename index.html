@@ -1,135 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="bg-zinc-950">
 
 <head>
   <meta charset="utf-8" />
   <meta name="description" content="Jacob Ross - Software Engineer" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>Jacob Ross</title>
 </head>
 
-<body>
+<body class="bg-zinc-950 text-zinc-300 font-sans antialiased">
 
   <!-- HEADER -->
-  <div id="header_wrap" class="outer">
-    <div class="inner">
-      <div class="column column-half">
-        <a href="/">
-          <h1 id="project_title">Jacob Ross</h1>
-        </a>
-        <h2 id="project_tagline">Software Engineer</h2>
+  <header class="border-b border-zinc-800">
+    <div class="max-w-3xl mx-auto px-6 py-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+      <div>
+        <h1 class="text-3xl font-bold text-white tracking-tight">Jacob Ross</h1>
+        <p class="text-zinc-400 mt-1">Software Engineer</p>
       </div>
-      <div class="column column-half">
-        <!-- <h3 id="resume">
-          My <a href="" target="_blank">Resume</a>
-        </h3> -->
-        <h3 id="social">
-          Find me on
-          <a href="https://www.linkedin.com/in/jacob-ross-71097139" target="_blank">LinkedIn</a>!
-        </h3>
-        <h3 id="contact">
-          Send me an email at <a href="mailto:jross.thumbsup@gmail.com">jross.thumbsup@gmail.com</a>.
-        </h3>
-        </h3>
-      </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-
-  <!-- MAIN CONTENT -->
-  <section id="main_content_wrap" class="outer">
-    <div id="main_content" class="inner">
-
-      <div class="box-rounded">
-        <div class="column column-full">
-          <h3>About Me</h3>
-          <span class="box-shadow">
-            <img class="profile_pic" src="images/profile_pic.jpg" alt="Jacob Ross Illustration" />
-          </span>
-        </div>
-        <div class="clear"></div>
-        <div class="column column-full">
-          <p>Hey there!</p>
-
-          <p>I'm Jacob Ross, a software engineer in Portland, OR with over a decade of platform, frontend, and backend experience. I graduated from The Art Institute of Portland with a Bachelor of Science in 2013. I specialize in Node.js and AWS, building platform services and tools that help engineering teams ship faster. I also work with Next.js, React, and CI/CD pipelines using GitHub Actions and Jenkins.</p>
-
-          <p>Check out some of my work below!</p>
-        </div>
-      </div>
-
-      <div class="about-me box-rounded">
-        <div class="projects column column-full">
-          <h3>Projects</h3>
-          <ul class="box-shadow">
-            <li>
-              <a href="#web-development">Web Development</a>
-            </li>
-            <li>
-              <a href="#game-development">Game Development</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="box-rounded">
-        <div class="dev-tools column">
-          <h3>Development Tools</h3>
-          <ul>
-            <li>AWS (ECS, S3, ALB, Lambda, API Gateway, DynamoDB, CloudFront, SNS/SQS)</li>
-            <li>JavaScript</li>
-            <li>Node.js</li>
-            <li>Next.js</li>
-            <li>React</li>
-            <li>Vue</li>
-            <li>PHP</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>MySQL</li>
-            <li>PostgreSQL</li>
-            <li>GitHub Actions</li>
-            <li>Jenkins</li>
-            <li>Groovy</li>
-            <li>Phaser</li>
-            <li>ImpactJS</li>
-          </ul>
-        </div>
-        <div class="clear"></div>
-      </div>
-
-      <a name="web-development"></a>
-      <h3>Web Development</h3>
-      <div class="line"></div>
-      <div class="box-rounded">
-        <h4><a href="https://www.nike.com" target="_blank">Nike</a></h4>
-        <p><span class="sub-title">Key Skills:</span> Amazon Web Services, Node.js, Next.js, JavaScript, Groovy, Jenkins, GitHub Actions</p>
-        <p><span class="sub-title">Description:</span> At Nike, I build and maintain platform services and developer tooling that enable engineering teams to ship faster and more reliably. Work includes a static asset delivery system, shared CI/CD pipelines for supporting experience teams, and event-driven content infrastructure on AWS.</p>
-      </div>
-
-      <a name="game-development"></a>
-      <h3>Game Development</h3>
-      <div class="line"></div>
-      <div class="box-rounded">
-        <h4><a href="space-station-run.html">Space Station Run</a></h4>
-        <p><span class="sub-title">Key Skills:</span> JavaScript, ImpactJS, Graphics, Sound Editing</p>
-        <p><span class="sub-title">Description:</span> Space Station Run was my first experiment with developing HTML5 games. The focus of this project was basic procedural generation. Built using <a
-            href="http://impactjs.com/">ImpactJS</a>.</p>
-        <a class="img-link" href="space-station-run.html"><img src="images/ssr_title.jpg" /></a>
+      <div class="text-sm text-zinc-400 space-y-1 sm:text-right">
+        <p><a href="https://www.linkedin.com/in/jacob-ross-71097139" target="_blank" class="text-blue-400 hover:text-blue-300 transition-colors">LinkedIn</a></p>
+        <p><a href="mailto:jross.thumbsup@gmail.com" class="text-blue-400 hover:text-blue-300 transition-colors">jross.thumbsup@gmail.com</a></p>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- FOOTER  -->
-  <div id="footer_wrap" class="outer">
-    <div class="inner">
-      <p><span>Jacob Ross &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> | Published with</span> <a href="http://pages.github.com">GitHub Pages</a></p>
+  <!-- MAIN -->
+  <main class="max-w-3xl mx-auto px-6 py-12 space-y-16">
+
+    <!-- About -->
+    <section class="flex flex-col sm:flex-row gap-8 items-start">
+      <img class="w-32 h-32 rounded-full object-cover flex-shrink-0 ring-2 ring-zinc-700" src="images/profile_pic.jpg" alt="Jacob Ross" />
+      <div>
+        <h2 class="text-xl font-semibold text-white mb-3">About Me</h2>
+        <p class="text-zinc-400 leading-relaxed">Hey there! I'm Jacob Ross, a software engineer in Portland, OR with over a decade of platform, frontend, and backend experience. I graduated from The Art Institute of Portland with a Bachelor of Science in 2013. I specialize in Node.js and AWS, building platform services and tools that help engineering teams ship faster. I also work with Next.js, React, and CI/CD pipelines using GitHub Actions and Jenkins.</p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <h2 class="text-xl font-semibold text-white mb-6">Development Tools</h2>
+      <dl class="space-y-3">
+        <div class="grid grid-cols-[140px_1fr] gap-4 items-baseline">
+          <dt class="text-xs text-zinc-400 uppercase tracking-widest pt-0.5">Languages</dt>
+          <dd class="text-zinc-300 text-sm">JavaScript, Node.js, PHP, Groovy</dd>
+        </div>
+        <div class="grid grid-cols-[140px_1fr] gap-4 items-baseline">
+          <dt class="text-xs text-zinc-400 uppercase tracking-widest pt-0.5">Frameworks</dt>
+          <dd class="text-zinc-300 text-sm">Next.js, React, Vue.js</dd>
+        </div>
+        <div class="grid grid-cols-[140px_1fr] gap-4 items-baseline">
+          <dt class="text-xs text-zinc-400 uppercase tracking-widest pt-0.5">Cloud</dt>
+          <dd class="text-zinc-300 text-sm">ECS, S3, Lambda, API Gateway, DynamoDB, CloudFront, SNS/SQS</dd>
+        </div>
+        <div class="grid grid-cols-[140px_1fr] gap-4 items-baseline">
+          <dt class="text-xs text-zinc-400 uppercase tracking-widest pt-0.5">Databases</dt>
+          <dd class="text-zinc-300 text-sm">MySQL, PostgreSQL</dd>
+        </div>
+        <div class="grid grid-cols-[140px_1fr] gap-4 items-baseline">
+          <dt class="text-xs text-zinc-400 uppercase tracking-widest pt-0.5">CI/CD</dt>
+          <dd class="text-zinc-300 text-sm">GitHub Actions, Jenkins</dd>
+        </div>
+        <div class="grid grid-cols-[140px_1fr] gap-4 items-baseline">
+          <dt class="text-xs text-zinc-400 uppercase tracking-widest pt-0.5">Game Dev</dt>
+          <dd class="text-zinc-300 text-sm">Phaser, Babylon.js</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- Experience -->
+    <section>
+      <h2 class="text-xl font-semibold text-white mb-8">Experience</h2>
+
+      <!-- Timeline -->
+      <div class="relative border-l border-zinc-800 ml-2 space-y-10">
+
+        <!-- Nike -->
+        <div class="relative pl-8">
+          <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-blue-500 ring-2 ring-zinc-950"></div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
+            <h3 class="text-white font-semibold">
+              <a href="https://www.nike.com" target="_blank" class="hover:text-blue-400 transition-colors">Nike</a>
+            </h3>
+            <span class="text-xs text-zinc-400">Jan 2016 – Present</span>
+          </div>
+          <p class="text-xs text-zinc-400 mb-3">Software Engineer II &middot; Contract to hire</p>
+          <p class="text-zinc-400 text-sm leading-relaxed">At Nike, I build and maintain platform services and developer tooling that enable engineering teams to ship faster and more reliably. Work includes a static asset delivery system, shared CI/CD pipelines for supporting experience teams, and event-driven content infrastructure on AWS.</p>
+          <p class="text-xs text-zinc-400 mt-2">Node.js &middot; Next.js &middot; AWS &middot; Groovy &middot; Jenkins &middot; GitHub Actions</p>
+        </div>
+
+        <!-- Intel -->
+        <div class="relative pl-8">
+          <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-zinc-700 ring-2 ring-zinc-950"></div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
+            <h3 class="text-white font-semibold">Intel</h3>
+            <span class="text-xs text-zinc-400">May 2015 – Jan 2016</span>
+          </div>
+          <p class="text-xs text-zinc-400 mb-3">Web Developer &middot; Contract</p>
+          <p class="text-zinc-400 text-sm leading-relaxed">Tech lead of a front-end team serving multiple geographies on Intel.com. Built responsive data visualizations using D3.js for diversity campaigns.</p>
+          <p class="text-xs text-zinc-400 mt-2">JavaScript &middot; D3.js</p>
+        </div>
+
+        <!-- AngelVision -->
+        <div class="relative pl-8">
+          <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-zinc-700 ring-2 ring-zinc-950"></div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
+            <h3 class="text-white font-semibold">AngelVision Technologies</h3>
+            <span class="text-xs text-zinc-400">Apr 2013 – Feb 2015</span>
+          </div>
+          <p class="text-xs text-zinc-400 mb-3">Web Developer</p>
+          <p class="text-zinc-400 text-sm leading-relaxed">Built full-stack web applications and integrated third-party REST APIs including Stripe, PayPal, and social platforms.</p>
+          <p class="text-xs text-zinc-400 mt-2">PHP &middot; Laravel &middot; MySQL</p>
+        </div>
+
+        <!-- Darkwater -->
+        <div class="relative pl-8">
+          <div class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-zinc-700 ring-2 ring-zinc-950"></div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
+            <h3 class="text-white font-semibold">Darkwater Studios</h3>
+            <span class="text-xs text-zinc-400">Jan 2013 – Apr 2013</span>
+          </div>
+          <p class="text-xs text-zinc-400 mb-3">Junior Developer</p>
+          <p class="text-zinc-400 text-sm leading-relaxed">Server-side development of web projects using PHP and MySQL, including an in-house CMS.</p>
+          <p class="text-xs text-zinc-400 mt-2">PHP &middot; MySQL</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-zinc-800 mt-12">
+    <div class="max-w-3xl mx-auto px-6 py-6 text-center text-zinc-400 text-sm">
+      <p>Jacob Ross &copy; <script>document.write(new Date().getFullYear())</script> &middot; <a href="http://pages.github.com" class="hover:text-zinc-300 transition-colors">GitHub Pages</a></p>
     </div>
-  </div>
+  </footer>
 
-  <script type="text/javascript" src="javascripts/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/main.js"></script>
 </body>
 
 </html>
